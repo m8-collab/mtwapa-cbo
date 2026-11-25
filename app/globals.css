@@ -1,0 +1,45 @@
+:root{--sea:#0B3C49;--ink:#10242B;--mist:#EAF3F2;--mango:#FFC53D;--blue:#2441D6;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font-body),system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;font-size:1.05rem}
+h1,h2,h3{font-family:var(--font-display),system-ui,sans-serif;line-height:1.08;margin:0 0 .6em;letter-spacing:-.02em}
+h1{font-size:clamp(2.4rem,7vw,4.8rem);font-weight:800}
+h2{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700}
+h3{font-size:1.25rem;font-weight:700}
+p{max-width:62ch;margin:0 0 1em}
+a{color:var(--blue)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--mango);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 1.25rem}
+.header{border-bottom:1px solid #d5e3e1;background:var(--white);position:sticky;top:0;z-index:5}
+.header-row{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;align-items:center;justify-content:space-between;padding-top:.8rem;padding-bottom:.8rem}
+.brand{font-family:var(--font-display),sans-serif;font-weight:800;font-size:1.3rem;color:var(--sea);text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:.25rem 1.25rem}
+nav a{color:var(--ink);text-decoration:none;font-weight:600}
+nav a:hover{color:var(--blue)}
+.hero{background:var(--sea);color:var(--white);padding:5rem 0 6rem}
+.hero h1{max-width:14ch}
+.hero p{font-size:1.2rem;color:#d7e9e6}
+.hero em{font-style:normal;background:var(--mango);color:var(--ink);padding:0 .15em}
+.tide{display:block;width:100%;height:60px;margin-top:-1px}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1.5rem}
+.btn{display:inline-block;padding:.8rem 1.4rem;font-weight:700;text-decoration:none;border-radius:999px;background:var(--mango);color:var(--ink);border:2px solid var(--mango)}
+.btn.ghost{background:transparent;color:inherit;border-color:currentColor}
+.section{padding:4rem 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem 2.5rem;margin-top:2rem}
+.grid h3{border-top:4px solid var(--mango);padding-top:.8rem}
+.page-head{background:var(--mist);padding:3.5rem 0 2.5rem}
+.page-head h1{font-size:clamp(2rem,5vw,3.4rem);margin-bottom:.3em}
+.give{background:var(--blue);color:var(--white);padding:3.5rem 0}
+.give a{color:var(--mango)}
+.give .btn{color:var(--ink)}
+.paybill{font-family:var(--font-display),sans-serif;font-size:1.5rem;font-weight:700}
+.footer{background:var(--ink);color:#cfe0de;padding:2.5rem 0}
+.footer a{color:var(--mango)}
+.footer p{margin:.2rem 0}
+.small{font-size:.9rem;opacity:.8}
+ul.plain{padding-left:1.1rem}
+ul.plain li{margin-bottom:.5rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.thumb{display:block;width:100%;height:190px;object-fit:cover;border-radius:6px;margin-bottom:1rem}
+.thumb.ph{background:var(--mist);color:var(--sea);display:flex;align-items:center;justify-content:center}
+.grid h3{margin-top:0}
